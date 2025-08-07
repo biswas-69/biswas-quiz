@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="teacher.css" />
+</head>
+<body>
+    <h2>Manage Categories</h2>
+<div id="categoryManagerContainer" style="margin-bottom: 20px;"></div>
+
+  <div class="container">
+    <header>
+      <h1>🎓 Teacher Dashboard</h1>
+      <button onclick="logout()" class="logout-btn">🚪 Logout</button>
+    </header>
+
+    <section class="add-section">
+      <h2>Add New Quiz Question</h2>
+      <form id="questionsForm">
+        <div id="questionInputsContainer"></div>
+        <button type="button" class="add-btn" onclick="addQuestionBlock()">➕ Add Another Question</button>
+        <button type="submit" class="save-btn">💾 Save Questions</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <section class="list-section">
+      <h2>📂 All Quiz Questions by Category</h2>
+      <div id="questionList"></div>
+    </section>
+  </div>
+
+  <script src="teacher.js"></script>
+</body>
+</html>

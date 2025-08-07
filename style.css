@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f3f3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077cc;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#timer {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logout-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Center box for category selection */
+.center-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.primary-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #218838;
+}
+
+/* Quiz Box */
+.quiz-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Question */
+#questionNumber {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#questionText {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Question Image */
+.question-img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Options */
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.option-btn:hover {
+  background: #e0e0e0;
+}
+
+.option-btn.selected {
+  background: #cce5ff;
+  border-color: #3399ff;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-btn {
+    width: 48%;
+    font-size: 14px;
+  }
+
+  .option-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+.media-section {
+  margin-top: 20px;
+  text-align: center;
+}
+.media-section img,
+.media-section video {
+  max-height: 300px;
+  margin-top: 10px;
+}

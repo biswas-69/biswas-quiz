@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f6fa;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Add Section */
+.add-section h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.question-block {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.question-block input,
+.question-block select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.add-btn,
+.save-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover,
+.save-btn:hover {
+  background: #218838;
+}
+
+/* List Section */
+.list-section h2 {
+  margin-bottom: 15px;
+}
+
+.category-panel {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.category-header {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  font-size: 18px;
+}
+
+.category-body {
+  padding: 15px;
+  display: none;
+  background: #f9f9f9;
+}
+
+.question-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+  background: white;
+  border-radius: 5px;
+}
+
+.question-item strong {
+  display: block;
+}
+
+.question-item button {
+  margin-top: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #ffc107;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+.category-row {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.category-row input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.category-row button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 8px;
+}
+
+.new-category-row input {
+  font-style: italic;
+  color: #666;
+}
+

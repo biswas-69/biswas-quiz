@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 150px;
+    background: #f4f4f4;
+  }
+  button {
+    font-size: 20px;
+    padding: 15px 40px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #007ACC;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #005A99;
+  }
+</style>
+</head>
+<body>
+  <h1>Select Role to Login</h1>
+  <button id="teacherBtn">Login as Teacher</button>
+  <button id="userBtn">Login as User</button>
+
+  <script>
+    const teacherPassword = "Biswas12345";
+
+    document.getElementById("teacherBtn").addEventListener("click", () => {
+      const pass = prompt("Enter password for Teacher login:");
+      if(pass === teacherPassword) {
+        localStorage.setItem('role', 'teacher');
+        alert("Login successful as Teacher!");
+        window.location.href = "teacher.html";
+      } else {
+        alert("Incorrect password! Access denied.");
+      }
+    });
+
+    document.getElementById("userBtn").addEventListener("click", () => {
+      localStorage.setItem('role', 'user');
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

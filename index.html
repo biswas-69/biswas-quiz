@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Online Quiz</h1>
+      <div class="header-right">
+        <div id="timer">⏱️ 30</div>
+        <button onclick="logout()" class="logout-btn">🚪 Logout</button>
+      </div>
+    </header>
+
+    <!-- Category Selector -->
+    <div id="categorySelector" class="center-box">
+      <h2>Select Quiz Category</h2>
+      <select id="categorySelect"></select>
+      <button onclick="startQuiz()" class="primary-btn">🎮 Start Quiz</button>
+    </div>
+
+    <!-- Quiz Area -->
+     <div id="media" class="media-section"></div>
+
+    <div id="quizArea" class="quiz-box" style="display: none;">
+      <div id="questionContainer">
+        <h2 id="questionNumber"></h2>
+        <p id="questionText"></p>
+        <img id="questionImage" src="" alt="" class="question-img" />
+        <div id="optionsContainer" class="options-grid"></div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevQuestion()" class="nav-btn">⏪ Previous</button>
+        <button onclick="nextQuestion()" class="nav-btn">Next ⏩</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

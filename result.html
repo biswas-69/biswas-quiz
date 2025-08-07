@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="result.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📊 Quiz Result</h1>
+      <button onclick="logout()" class="logout-btn">🚪 Logout</button>
+    </header>
+
+    <section class="summary">
+      <h2 id="resultMessage">Result</h2>
+      <p>Total Score: <strong id="score"></strong></p>
+      <p>Percentage: <strong id="percent"></strong></p>
+      <p>Status: <strong id="status"></strong></p>
+    </section>
+
+    <section class="details">
+      <h3>📋 Answer Breakdown</h3>
+      <ul id="answerList"></ul>
+    </section>
+  </div>
+
+  <script src="result.js"></script>
+</body>
+</html>
